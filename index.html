@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stimulus BlurHash</title>
+
+    <script type="module" defer>
+      import { Application } from 'stimulus'
+      import BlurHash from './src/index.js'
+
+      const application = Application.start()
+      application.register('blurhash', BlurHash)
+    </script>
+  </head>
+
+  <body>
+    <div data-controller="blurhash" data-blurhash-hash-value="LEHV6nWB2yk8pyo0adR*.7kCMdnj">
+      <canvas data-blurhash-target="canvas" height="420" width="300"></canvas>
+      <canvas data-blurhash-target="canvas" height="300" width="420"></canvas>
+
+      <img data-blurhash-target="image" src="/photo.png" width="400px" />
+    </div>
+
+    <div data-controller="blurhash" data-blurhash-hash-value="U8Aw9t9F00i_tTM{i]Rk00-;~pM|DgkC%ixW">
+      <canvas data-blurhash-target="canvas" height="300" width="400"></canvas>
+    </div>
+  </body>
+</html>

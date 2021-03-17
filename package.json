@@ -1,0 +1,24 @@
+{
+  "name": "stimulus-blurhash",
+  "version": "0.1.0",
+  "description": "Stimulus Controller for BlurHash",
+  "main": "src/index.js",
+  "repository": "https://github.com/marcoroth/stimulus-blurhash",
+  "author": "Marco Roth <marco.roth@hey.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "snowpack dev",
+    "prod": "snowpack build"
+  },
+  "dependencies": {
+    "blurhash": "^1.1.3",
+    "stimulus": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-syntax-class-properties": "^7.12.13",
+    "@babel/preset-env": "^7.13.10",
+    "@snowpack/plugin-babel": "^2.1.6",
+    "snowpack": "^3.0.13"
+  }
+}
